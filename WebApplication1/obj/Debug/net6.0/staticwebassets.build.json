@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FXSTh4g6XGQ0rqVIQdo/G+tKbbpuk7MiBVoly4SO5IY=",
+  "Hash": "1eVE0oGzGGExc3hSMfkh6QtOC3HAzKn+UeFnNkpi+7Q=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\code\\BookClassApp\\WebApplication1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\code\\BookClassApp\\WebApplication1\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\code\\BookClassApp\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "C:\\code\\BookClassApp\\WebApplication1\\wwwroot\\css\\site.css",
