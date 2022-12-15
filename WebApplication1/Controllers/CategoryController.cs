@@ -39,7 +39,7 @@ namespace WebApplication1.Controllers
             if (obj.Name == obj.DisplayOrder.ToString())
             {
                 // The "name" arg refers to the 'Name' field in the Category class. Will display error under that input field
-                ModelState.AddModelError("name", "The DisplayOrder cannot exactly match Name.");
+                ModelState.AddModelError("name", "The Display Order cannot exactly match Name.");
             }
 
             // Validation to check all annotations in Category model are satisfied
@@ -49,8 +49,12 @@ namespace WebApplication1.Controllers
                 _db.Categories.Add(obj);
                 // Saves change to data base
                 _db.SaveChanges();
-                // Executes Action (method) in Controller class specified
-                // Since we are in the current controller, only need to specify method (action)
+
+                // TempData allows you to display alert messages. Will only be created an retrievable for a single redirect
+                // then disappears after next action
+                TempData["success"] = "Category created successfully!";
+
+                // RedirectToAction executes an method in Controller class specified (method name is "Index")
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -87,6 +91,7 @@ namespace WebApplication1.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category edited successfully!";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -123,6 +128,7 @@ namespace WebApplication1.Controllers
             }
             _db.Categories.Remove(categoryFromDb);
             _db.SaveChanges();
+            TempData["success"] = "Category deleted successfully!";
             return RedirectToAction("Index");
         }
 

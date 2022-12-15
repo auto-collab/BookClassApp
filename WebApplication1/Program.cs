@@ -12,7 +12,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
   ));
 
 // Allows for real time updates to be seen without restarting application
-builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+//builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
